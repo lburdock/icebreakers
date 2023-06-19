@@ -1,0 +1,87 @@
+:root {
+  --gray-15: #1e262e;
+  --gray-20: #29323d;
+  --gray-35: #47576b;
+  --gray-40: #52637a;
+  --gray-45: #5c708a;
+  --gray-50: #667c99;
+  --gray-55: #758aa3;
+  --gray-95: #f0f2f5;
+}
+
+html {
+  color: var(--gray-95);
+  background-color: var(--gray-15);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: 100%;
+  padding: 2.5rem 3rem;
+}
+
+.question {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 1rem;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2.5rem auto 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+button {
+  background: var(--gray-45);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  flex-basis: 0;
+  flex-grow: 2;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+button:hover,
+button:focus {
+  background: var(--gray-50);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2.5rem 2rem;
+  }
+
+  .question {
+    flex-basis: 60%;
+    font-size: 1.75rem;
+  }
+
+  .buttons {
+    column-gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+}

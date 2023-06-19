@@ -1,0 +1,35 @@
+{
+  "name": "Icebreakers",
+  "icons": [
+    {
+      "src": "/icebreakers/images/svg-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "933x933"
+    },
+    {
+      "src": "/icebreakers/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icebreakers/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/icebreakers/",
+  "start_url": "/icebreakers/",
+  "background_color": "#1e262e",
+  "display": "standalone",
+  "scope": "/icebreakers/",
+  "theme_color": "#1e262e",
+  "description": "Conversation icebreakers",
+  "screenshots": [
+    {
+      "src": "/icebreakers/images/screenshot.png",
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow"
+    }
+  ]
+}
